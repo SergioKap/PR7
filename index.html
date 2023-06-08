@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Мій сайт-візитка</title>
+  <!-- Підключення Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body style="background-color: #b1b0a4;">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Капиця Сергій</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Про мене</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Портфоліо</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hobi">Мої хобі</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Ваші контакти</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#mycontact">Мої контакти</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+ 
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Коротка інформація про мене</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Звати мене Капиця Сергій, навчаюся у Хмельницькому Національному Університеті. Проживаю в такому-то селі, в такому-то будинку і т.д...</p>
+        </div>
+        <div class="col-md-6">
+          <img src="photo_2023-04-18_21-34-13.jpg" class="img-fluid img-thumbnail" alt="Фото" style="max-width: 200px; margin-left: auto;">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    #portfolio .container {
+    max-width: 1500px;
+      background-color: #8a8a8a;
+    }
+    #about h2 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  
+    #about p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+  
+    
+  
+    @media (max-width: 767px) {
+      #about .col-md-6:last-child {
+        margin-top: 20px;
+      }
+    }
+  </style>
+  
+
+  <section id="portfolio" class="py-3 bg-dark">
+    <div class="container">
+      <h2 class="mb-4">Портфоліо</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="С.jpg" class="card-img-top" alt="Зображення 1">
+            <div class="card-body">
+              <h5 class="card-title">Навчався у школі-ліцей</h5>
+              <p class="card-text">Чемеровецьке НВК№1</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="М.jpg" class="card-img-top" alt="Зображення 2">
+            <div class="card-body">
+              <h5 class="card-title">Навчаюся в університеті</h5>
+              <p class="card-text">Хмельницький Національний Університет</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="sticker.webp" class="card-img-top" alt="Зображення 3">
+            <div class="card-body">
+              <h5 class="card-title">Навчаюся на кафедрі комп`ютерної інженерії та програмування</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hobi" class="py-3 bg-dark" style="display: flex; justify-content: center;">
+    <div class="container">
+      <h2 class="mb-4">Мої хобі</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="У.jpg" class="card-img-top" alt="Зображення 1">
+            <div class="card-body">
+              <h5 class="card-title">Люблю займатись спортом</h5>
+              <p class="card-text">Подобаєть грати волейбол і інколи футбол. Повисіти на турніках і поплавати в ставку. + їздити на велосипеді</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="02.webp" class="card-img-top" alt="Зображення 2">
+            <div class="card-body">
+              <h5 class="card-title">Люблю грати в комп'ютерні ігри</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    #hobi .container {
+      max-width: 1500px;
+      background-color: #8a8a8a;
+    }
+  
+    #hobi h2 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  
+    #hobi .row {
+      justify-content: center;
+    }
+  
+    #hobi .card {
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    #hobi .card-img-top {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  
+    #hobi .card-body {
+      padding: 20px;
+    }
+  
+    #hobi .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  
+    #hobi .card-text {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #666;
+    }
+  </style>
+
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Ваші контакти</h2>
+      <p>Заповніть опитування перед зв'язком зі мною:</p>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Ваше ім'я:</label>
+          <input type="text" class="form-control" id="name" placeholder="Введіть ваше ім'я">
+        </div>
+        <div class="form-group">
+          <label for="email">Ваш email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Введіть ваш email">
+        </div>
+        <div class="form-group">
+          <label for="question">Ваше питання:</label>
+          <textarea class="form-control" id="question" rows="3" placeholder="Задайте ваше питання"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="topic">Оберіть тему:</label>
+          <select class="form-control" id="topic">
+            <option value="general">Загальне запитання</option>
+            <option value="support">Технічна підтримка</option>
+            <option value="feedback">Відгук чи пропозиція</option>
+          </select>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="subscribe">
+          <label class="form-check-label" for="subscribe">Підписатися на розсилку</label>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Надіслати</button>
+      </form>
+    </div>
+  </section>
+  
+  <style>
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #f7f7f7;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    
+    .contact-form .form-group label {
+      font-weight: bold;
+    }
+    
+    .contact-form .form-group input,
+    .contact-form .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .contact-form .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("down-arrow.png");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 12px;
+      padding-right: 20px;
+    }
+    
+    .contact-form .form-check label {
+      font-weight: normal;
+    }
+  </style>
+
+  
+<section id="mycontact" class="py-5">
+  <div class="container">
+    <h2 class="mb-4">Контакти</h2>
+    <p>Пошта: serikserikovich2004@gmail.com</p>
+    <p>Телефон: 0671864176</p>
+  </div>
+</section>
+
+<style>
+  #mycontact {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #mycontact h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #mycontact p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+</style>
+
+  <footer class="py-3 bg-dark text-white text-center">
+    <div class="container">
+      &copy; 2023 Капиця Сергій
+    </div>
+  </footer>
+
+  <!-- Підключення Bootstrap JS та скриптів -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
